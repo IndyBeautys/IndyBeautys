@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IndyBeautys - Soins de visage, extension de cils, manucure et formations beauté">
+    <title>IndyBeautys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>IndyBeautys</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#planning">Planning</a></li>
+                <li><a href="#formation">Formations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue chez IndyBeautys</h2>
+            <p>Soins de qualité pour votre beauté et bien-être : soins du visage, extension de cils, manucure, et plus.</p>
+            <a href="#contact" class="btn-primary">Prenez Rendez-Vous</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Services proposés </h2>
+        </div>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Soins du Visage</h3>
+                <p>Régénération et soin complet pour une peau éclatante.</p>
+            </div>
+            <div class="service-item">
+                <h3>Extension de Cils</h3>
+                <p>Des cils magnifiques et longs pour un regard intense.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manucure et Pédicure</h3>
+                <p>Des ongles soignés avec une finition parfaite.</p>
+            </div>
+            <div class="service-item">
+                <h3>Rehaussement de Cils</h3>
+                <p>Des cils plus courbés, sans extension, pour un effet naturel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planning Section -->
+    <section id="planning" class="planning">
+        <div class="section-title">
+            <h2>Planning de Rendez-vous</h2>
+        </div>
+        <p>Consultez mon planning et réservez facilement un créneau pour votre soin préféré.</p>
+        <div class="calendar">
+            <p>Calendrier interactif ici (plugin à ajouter pour la réservation en ligne).</p>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section id="formation" class="formation">
+        <div class="section-title">
+            <h2>Propositions de Formations</h2>
+        </div>
+        <ul>
+            <li>Formation Extension de Cils</li>
+            <li>Formation Manucure et Pédicure</li>
+            <li>Formation Rehaussement de Sourcils</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contactez-Nous</h2>
+        </div>
+        <p>Pour toute information ou réservation, contactez-moi sur Instagram: IndyBeautys</p>
+        <div class="contact-info">
+            <p><strong>Numéro de téléphone :</strong> 0614330767</p>
+            <p><strong>Adresse :</strong> 48 chemin des célestin, Lyon, 69600</p>
+        </div>
+        <a href="mailto:indira_malkic@outlook.fr" class="btn-secondary">Envoyer un Email pour demande de formation</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 IndyBeautys | Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F1F3; /* Rose très pâle */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #F7A7C4; /* Rose pastel */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+}
+
+header .menu li {
+    margin: 0 20px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F4C0D4; /* Rose doux */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #F7A7C4;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services .section-title h2 {
+    color: #F7A7C4;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #F7F1F3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    color: #F7A7C4;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Planning Section */
+.planning {
+    padding: 60px 20px;
+    background-color: #F7A7C4;
+    color: #fff;
+    text-align: center;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+/* Formations Section */
+.formation {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.formation ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.formation li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #F7F1F3;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #F7A7C4;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
